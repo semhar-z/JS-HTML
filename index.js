@@ -63,7 +63,57 @@ console.log(`The ramainder of dividing the num value by the fouth number is: ${y
 // Will your budget be enough to cover the fuel expense?
 // How long will the trip take, in hours?
 
+
 let dis = 1500
-let bug = 175
-let costPerG = 3
+let bugt = 175
+let costPerGallon = 3
+let speedAt55 = 55
+let speedAt60 = 60
+let speedAt75 = 75
+let milesPerGallonAt55 = 30
+let milesPerGallonAt60 = 28
+let milesPerGallonAt75 = 23
+let gallonsAt55 = dis/milesPerGallonAt55
+let gallonsAt60 = dis/milesPerGallonAt60
+let gallonsAt75 = dis/milesPerGallonAt75
+let IsEnoughBudget = x
+let timeOfTripAt55 = dis/speedAt55
+let timeOfTripAt60 = dis/speedAt60
+let timeOfTripAt75 = dis/speedAt75
+let budgetAt55 = costPerGallon*gallonsAt55
+let budgetAt60 = costPerGallon*gallonsAt60
+let budgetAt75 = costPerGallon*gallonsAt75
+
+
+console.log(`The gallons of fuel you need if you travel 55/hr at 30miles/gallon is: ${gallonsAt55}.`)         
+console.log(`The gallons of fuel you need if you travel 60/hr at 28miles/gallon is: ${gallonsAt60}.`)   
+console.log(`The gallons of fuel you need if you travel 75/hr at 23miles/gallon is: ${gallonsAt75}.`)   
+console.log(`The time the trip takes in hours if you travel 55/hr is: ${timeOfTripAt55} hours.`)
+console.log(`The time the trip takes in hours if you travel 60/hr is: ${timeOfTripAt60} hours.`)
+console.log(`The time the trip takes in hours if you travel 75/hr is: ${timeOfTripAt75} hours.`)
+console.log(`The budget for 55m/hr is: $ ${budgetAt55}.`)
+console.log(`The budget for 60m/hr is: $ ${budgetAt60}.`)
+console.log(`The budget for 75m/hr is: $ ${budgetAt75}.`)
+
+if(budgetAt55>bugt){
+    console.log("The budget is not enough to cover the fuel expense.")
+}
+else {
+    console.log("The budget is enough to cover the fuel expense.")
+}
+
+if(budgetAt60>bugt){
+    console.log("The budget is not enough to cover the fuel expense.")
+}
+else {
+    console.log("The budget is enough to cover the fuel expense.")
+}
+if(budgetAt75>bugt){
+    console.log("The budget is not enough to cover the fuel expense.")
+}
+else {
+    console.log("The budget is enough to cover the fuel expense.")
+}
+
+
 
